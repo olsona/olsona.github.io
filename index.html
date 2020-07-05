@@ -9,22 +9,26 @@
       color: maroon;
     }
 
-    #exec-bio {
-      background-color: lightgray;
-    }
-
     .bio-box {
       border: 1px solid black;
     }
 
-    .bio-box a {
+    .bio-copy a {
       color: green;
+    }
+
+    .social-link {
+      color: blue;
+    }
+
+    div.-bio-box {
+      border: 1px solid green;
     }
   </style>
 </head>
 
 <body>
-  <h1>I'm an h1</h1>
+  <h1 class="social-link">I'm an h1</h1>
   <ul>
     <li>
       <a href="https://example.com/">Link</a>
@@ -37,17 +41,40 @@
     </li>
   </ul>
   <h2>I'm an h2</h2>
-  <div id="exec-bio" class="bio-box">
-    <a href="https://example.com/">I'm a link</a>
+  <div class="bio-box">
+    <h3>Michael Hartl</h3>
+    <a href="https://twitter.com/mhartl" class="social-link">here</a>
+    <div class="bio-copy">
+      <p>
+        He said some words about himself, here are some links: <a href="https://www.railstutorial.org/">Ruby on Rails
+          Tutorial</a>, <a href="https://learnenough.com/">Learn Enough to be Dangerous</a>, <a
+          href="http://tauday.com/">Tau Day</a>.
+      </p>
+    </div>
   </div>
   <div class="bio-box">
-    <a href="https://example.com/">I'm a link</a>
+    <h3>Lee Donahoe</h3>
+    <a href="https://twitter.com/leedonahoe" class="social-link">here</a>
+    <div class="bio-copy">
+      <p>
+        Lee also wrote some words about himself.
+      </p>
+    </div>
   </div>
   <div class="bio-box">
-    <a href="https://example.com/">I'm a link</a>
+    <h3>Nick Merwin</h3>
+    <a href="https://twitter.com/nickmerwin" class="social-link">here</a>
+    <div class="bio-copy">
+      <p>
+        Nick wrote words, too.
+      </p>
+    </div>
   </div>
   <div class="bio-box">
-    <a href="https://example.com/">I'm a link</a>
+    <h3>???</h3>
+    <div class="bio-copy">
+      <p>The Future</p>
+    </div>
   </div>
 </body>
 
