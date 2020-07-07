@@ -5,75 +5,121 @@
   <title>Working Through "Learn Enough CSS to be Dangerous"</title>
   <meta charset="utf-8">
   <style>
+    /* Global styles */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 7vw;
+      margin-top: 0;
+    }
+
     a {
-      color: maroon;
+      color: rgba(100, 0, 255, 0.5);
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    /* Hero styles */
+    .full-hero {
+      background-color: #c7dbfc;
+      height: 50vw;
+      width: 50vw;
+    }
+
+    /* Social styles */
+    .social-link {
+      color: #00f;
+      background: rgba(150, 150, 150, 0.5);
+    }
+
+    /* Bio styles */
+    .bio-wrapper {
+      font-size: 24px;
     }
 
     .bio-box {
-      border: 1px solid black;
+      border: 1px solid #000;
+      width: 50%;
+      font-size: 1rem;
+    }
+
+    .bio-box h3 {
+      font-size: 1.5em;
+    }
+
+    .bio-copy {
+      font-size: 1em;
     }
 
     .bio-copy a {
       color: green;
     }
 
-    .social-link {
-      color: blue;
-    }
+
 
     div.-bio-box {
-      border: 1px solid green;
+      border: 1px solid #080;
     }
   </style>
 </head>
 
 <body>
-  <h1 class="social-link">I'm an h1</h1>
-  <ul>
-    <li>
-      <a href="https://example.com/">Link</a>
-    </li>
-    <li>
-      <a href="https://example.com/">Link</a>
-    </li>
-    <li>
-      <a href="https://example.com/">Link</a>
-    </li>
-  </ul>
+  <div class="full-hero hero-home">
+    <h1>I'm an h1</h1>
+    <ul>
+      <li>
+        <a href="https://example.com/" class="social-link">Link</a>
+      </li>
+      <li>
+        <a href="https://example.com/" class="social-link">Link</a>
+      </li>
+      <li>
+        <a href="https://example.com/" class="social-link">Link</a>
+      </li>
+    </ul>
+  </div>
   <h2>I'm an h2</h2>
-  <div class="bio-box">
-    <h3>Michael Hartl</h3>
-    <a href="https://twitter.com/mhartl" class="social-link">here</a>
-    <div class="bio-copy">
-      <p>
-        He said some words about himself, here are some links: <a href="https://www.railstutorial.org/">Ruby on Rails
-          Tutorial</a>, <a href="https://learnenough.com/">Learn Enough to be Dangerous</a>, <a
-          href="http://tauday.com/">Tau Day</a>.
-      </p>
+  <div class="bio-wrapper">
+    <div class="bio-box">
+      <h3>Michael Hartl</h3>
+      <a href="https://twitter.com/mhartl" class="social-link">here</a>
+      <div class="bio-copy">
+        <p>
+          He said some words about himself, here are some links: <a href="https://www.railstutorial.org/">Ruby on Rails
+            Tutorial</a>, <a href="https://learnenough.com/">Learn Enough to be Dangerous</a>, <a
+            href="http://tauday.com/">Tau Day</a>.
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="bio-box">
-    <h3>Lee Donahoe</h3>
-    <a href="https://twitter.com/leedonahoe" class="social-link">here</a>
-    <div class="bio-copy">
-      <p>
-        Lee also wrote some words about himself.
-      </p>
+    <div class="bio-box">
+      <h3>Lee Donahoe</h3>
+      <a href="https://twitter.com/leedonahoe" class="social-link">here</a>
+      <div class="bio-copy">
+        <p>
+          Lee also wrote some words about himself.
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="bio-box">
-    <h3>Nick Merwin</h3>
-    <a href="https://twitter.com/nickmerwin" class="social-link">here</a>
-    <div class="bio-copy">
-      <p>
-        Nick wrote words, too.
-      </p>
+    <div class="bio-box">
+      <h3>Nick Merwin</h3>
+      <a href="https://twitter.com/nickmerwin" class="social-link">here</a>
+      <div class="bio-copy">
+        <p>
+          Nick wrote words, too.
+        </p>
+      </div>
     </div>
-  </div>
-  <div class="bio-box">
-    <h3>???</h3>
-    <div class="bio-copy">
-      <p>The Future</p>
+    <div class="bio-box">
+      <h3>???</h3>
+      <div class="bio-copy">
+        <p>The Future</p>
+      </div>
     </div>
   </div>
 </body>
