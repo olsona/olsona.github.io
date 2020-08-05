@@ -18,21 +18,34 @@
     }
 
     a {
-      color: rgba(100, 0, 255, 0.5);
-    }
-
-    h2 {
-      font-size: 30px;
+      color: #f00;
     }
 
     /* Hero styles */
     .full-hero {
       background-color: #c7dbfc;
       height: 50vh;
-      width: 100vw;
     }
 
     /* Social styles */
+    .social-link {
+      background: rgba(150, 150, 150, 0.5);
+      border-radius: 99px;
+      box-sizing: border-box;
+      color: #fff;
+      display: inline-block;
+      font-family: helvetica, arial, sans;
+      font-size: 1em;
+      font-weight: bold;
+      height: 2.5em;
+      line-height: 1;
+      padding-top: 0.75em;
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      width: 2.5em;
+    }
+
     .social-list {
       list-style: none;
       padding: 0;
@@ -41,47 +54,42 @@
 
     .social-list>li {
       display: inline-block;
-    }
-
-    .social-link {
-      color: #00f;
-      background: rgba(150, 150, 150, 0.5);
-      display: inline-block;
-      height: 36px;
-      width: 36px;
+      margin: 0 0.5em;
     }
 
     /* Bio styles */
     .bio-wrapper {
       font-size: 24px;
+      margin: auto;
+      max-width: 1040px;
       overflow: hidden;
-    }
-
-    .bio-wrapper:after {
-      visibility: hidden;
-      display: block;
-      font-size: 0;
-      content: " ";
-      clear: both;
-      height: 0;
     }
 
     .bio-box {
       border: 1px solid #000;
-      width: 50%;
-      font-size: 1rem;
-      float: left;
-      padding: 2%;
-      width: 25%;
+      border-color: black black red;
       box-sizing: border-box;
+      float: left;
+      font-size: 1rem;
+      margin: 40px 1% 0;
+      padding: 0 2% 2%;
+      width: 23%;
     }
 
     .bio-box h3 {
       font-size: 1.5em;
+      color: #fff;
+      margin: -40px 0 1em;
+      text-align: center;
+    }
+
+    .bio-box img {
+      width: 100%;
     }
 
     .bio-copy {
       font-size: 1em;
+      line-height: 1.5;
     }
 
     .bio-copy a {
@@ -99,13 +107,13 @@
     <h1>I'm an h1</h1>
     <ul class="social-list">
       <li>
-        <a href="https://example.com/" class="social-link">Link</a>
+        <a href="https://example.com/" class="social-link">Fb</a>
       </li>
       <li>
-        <a href="https://example.com/" class="social-link">Link</a>
+        <a href="https://example.com/" class="social-link">Tw</a>
       </li>
       <li>
-        <a href="https://example.com/" class="social-link">Link</a>
+        <a href="https://example.com/" class="social-link">Gh</a>
       </li>
     </ul>
   </div>
@@ -114,6 +122,7 @@
 
   <div class="bio-wrapper">
     <div class="bio-box">
+      <img src="https://placekitten.com/g/400/400">
       <h3>Michael Hartl</h3>
       <a href="https://twitter.com/mhartl" class="social-link">here</a>
       <div class="bio-copy">
@@ -128,6 +137,7 @@
       </div>
     </div>
     <div class="bio-box">
+      <img src="https://placekitten.com/g/400/400">
       <h3>Lee Donahoe</h3>
       <a href="https://twitter.com/leedonahoe" class="social-link">here</a>
       <div class="bio-copy">
@@ -139,6 +149,7 @@
       </div>
     </div>
     <div class="bio-box">
+      <img src="https://placekitten.com/g/400/400">
       <h3>Nick Merwin</h3>
       <a href="https://twitter.com/nickmerwin" class="social-link">here</a>
       <div class="bio-copy">
@@ -150,6 +161,7 @@
       </div>
     </div>
     <div class="bio-box">
+      <img src="https://placekitten.com/g/400/400">
       <h3>???</h3>
       <div class="bio-copy">
         <p>The Future</p>
