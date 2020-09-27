@@ -467,3 +467,32 @@ div.-bio-box {
   margin-top: 3em;
   padding-top: 2em;
 }
+
+@media screen and (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  .header-nav {
+    padding: 2vh 1em 0 0;
+  }
+  .header-nav > li {
+    margin-left: 0.25em;
+  }
+  .header-nav > li ~ li {
+    padding-left: 0.25em;
+  }
+  .nav-links a {
+    font-size: 3.25vw;
+  }
+  .header-logo {
+    left: auto;
+  }
+
+  /* Blog styles */
+  .post-aside {
+    display: none;
+  }
+}
